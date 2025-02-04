@@ -1,6 +1,6 @@
 public class Suma {
      public static void main(String[] args) {
-        int [] a = {2, 5, 8, 3, 1, 10, 11};
+        int [] a = {4, 8, 2, 1, 6};
         System.out.println(sumaParesImparesArreglo(a));
         
      }
@@ -16,7 +16,22 @@ public class Suma {
             }
 
         }
-        cad = "La suma de los numeros pares =" + sumaPares + " suma de los números impares = " + sumaImpares;
+        cad = "La suma de los numeros pares = " + sumaPares + " suma de los números impares = " + sumaImpares;
         return  cad;
      }
+      public static String sumaExtremosArreglo(int[] a){
+        String cad = "";
+        //Verificamos si el arreglo es par o impar
+        if(a.length%2==0){
+            //El arreglo es par 
+            for (int i = 0; i < a.length/2; i++){
+                cad += (a[i]+a.length-1-i)+ "";
+            }
+            
+        }else{
+           //El arreglo es impar  
+           cad+="Arreglo impar";  
+        }
+            return cad;
+      } 
 }
