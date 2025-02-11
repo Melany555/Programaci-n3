@@ -6,6 +6,8 @@ public class ejercicio1{
 
         System.out.println(op.mostrarElementos(a));
 
+        System.out.println(op.sumarElementos(a));
+         
+        System.out.println(op.promedioElementos(a));
     }
-
 }
