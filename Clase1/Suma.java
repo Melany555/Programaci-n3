@@ -21,15 +21,18 @@ public class Suma {
      }
       public static String sumaExtremosArreglo(int[] a){
         String cad = "";
-        //Verificamos si el arreglo es par o impar
+  //Verificamos si el arreglo es par o impar
+
         if(a.length%2==0){
             //El arreglo es par 
+
             for (int i = 0; i < a.length/2; i++){
-                cad += (a[i]+a.length-1-i)+ "";
+                cad += (a[i]+ (a[a.length-1-i]))+ "";
             }
             
         }else{
            //El arreglo es impar  
+           
            cad+="Arreglo impar";  
         }
             return cad;
